@@ -183,6 +183,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="jdr-PQ-Owz"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oq1-vQ-Um1">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -362,6 +363,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="OH MY MOOD" id="43y-46-dVN"/>
+                    <connections>
+                        <outletCollection property="moodButtons" destination="xl7-Nb-PgU" collectionClass="NSMutableArray" id="ON4-CG-MZh"/>
+                        <outletCollection property="moodButtons" destination="Gvh-iC-xCY" collectionClass="NSMutableArray" id="ppW-zo-xTs"/>
+                        <outletCollection property="moodButtons" destination="Bbo-ZH-YEh" collectionClass="NSMutableArray" id="1oB-3X-L9d"/>
+                        <outletCollection property="moodButtons" destination="uVf-gB-90L" collectionClass="NSMutableArray" id="1XW-X5-y40"/>
+                        <outletCollection property="moodButtons" destination="GEv-Lo-LP8" collectionClass="NSMutableArray" id="onI-93-W4p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gJ6-II-5pV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -415,19 +423,19 @@
         <image name="emoji5" width="54" height="50"/>
         <image name="pencil.line" catalog="system" width="128" height="98"/>
         <namedColor name="color1">
-            <color red="0.90588235859999999" green="0.45098042490000001" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.90600001811981201" green="0.45100000500679016" blue="0.55299997329711914" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="color2">
-            <color red="0.9529411793" green="0.86666667460000002" blue="0.57647061349999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.95300000905990601" green="0.86699998378753662" blue="0.57599997520446777" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="color3">
-            <color red="0.97254902119999997" green="0.98039215800000001" blue="0.74901962280000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.97299998998641968" green="0.98000001907348633" blue="0.74900001287460327" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="color4">
-            <color red="0.82745099070000006" green="0.93725490570000003" blue="0.88627451660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.82700002193450928" green="0.93699997663497925" blue="0.88599997758865356" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="color5">
-            <color red="0.23921570180000001" green="0.40000003579999999" blue="0.58823531870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.23899999260902405" green="0.40000000596046448" blue="0.58799999952316284" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
