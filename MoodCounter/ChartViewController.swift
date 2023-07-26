@@ -13,10 +13,19 @@ class ChartViewController: UIViewController {
     @IBOutlet var scoreLabels: [UILabel]!
     @IBOutlet var cardBackgrounds: [UIView]!
     
+    let moodNames = Mood.allCases
+    let userDefaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         configUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        configScoreLabels()
     }
     
     func configUI() {
@@ -32,7 +41,6 @@ class ChartViewController: UIViewController {
     }
     
     func configMoodNameLabel(_ label: UILabel) {
-        let moodNames = Mood.allCases
         label.text = moodNames[label.tag-1].rawValue
         label.font = .preferredFont(forTextStyle: .body)
         
@@ -48,7 +56,11 @@ class ChartViewController: UIViewController {
     }
     
     func configScoreLabel(_ label: UILabel) {
-        label.text = "1점"
+        let index = label.tag - 1
+        let moodString = moodNames[index].rawValue
+        let score = userDefaults.integer(forKey: moodString)
+        
+        label.text = "\(score)점"
         label.font = .preferredFont(forTextStyle: .title1)
         
         if label.tag == 1 || label.tag == 5 {

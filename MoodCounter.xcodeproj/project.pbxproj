@@ -15,7 +15,7 @@
 		7E4DDAEE2A6FA9D200E1EA49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4DDAEC2A6FA9D200E1EA49 /* LaunchScreen.storyboard */; };
 		7E4DDAF62A6FB5EB00E1EA49 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DDAF52A6FB5EB00E1EA49 /* InputViewController.swift */; };
 		7E4DDAF82A6FB60300E1EA49 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DDAF72A6FB60300E1EA49 /* ChartViewController.swift */; };
-		7E4DDAFA2A6FB74100E1EA49 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DDAF92A6FB74000E1EA49 /* Mood.swift */; };
+		7E4DDAFA2A6FB74100E1EA49 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DDAF92A6FB74000E1EA49 /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		7E4DDAEF2A6FA9D200E1EA49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E4DDAF52A6FB5EB00E1EA49 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		7E4DDAF72A6FB60300E1EA49 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
-		7E4DDAF92A6FB74000E1EA49 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		7E4DDAF92A6FB74000E1EA49 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 				7E4DDAEF2A6FA9D200E1EA49 /* Info.plist */,
 				7E4DDAF52A6FB5EB00E1EA49 /* InputViewController.swift */,
 				7E4DDAF72A6FB60300E1EA49 /* ChartViewController.swift */,
-				7E4DDAF92A6FB74000E1EA49 /* Mood.swift */,
+				7E4DDAF92A6FB74000E1EA49 /* Models.swift */,
 			);
 			path = MoodCounter;
 			sourceTree = "<group>";
@@ -151,7 +151,7 @@
 				7E4DDAE22A6FA9D100E1EA49 /* AppDelegate.swift in Sources */,
 				7E4DDAE42A6FA9D100E1EA49 /* SceneDelegate.swift in Sources */,
 				7E4DDAF62A6FB5EB00E1EA49 /* InputViewController.swift in Sources */,
-				7E4DDAFA2A6FB74100E1EA49 /* Mood.swift in Sources */,
+				7E4DDAFA2A6FB74100E1EA49 /* Models.swift in Sources */,
 				7E4DDAF82A6FB60300E1EA49 /* ChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +299,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MoodCounter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -330,6 +331,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MoodCounter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
