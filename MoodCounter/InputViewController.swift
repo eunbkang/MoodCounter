@@ -18,6 +18,17 @@ class InputViewController: UIViewController {
         
         configMoodButtons()
     }
+    
+    @IBAction func tappedResetButton(_ sender: UIBarButtonItem) {
+        let alert = UIAlertController(title: "리셋", message: "모든 카운트가 초기화됩니다.", preferredStyle: .alert)
+        let cancel = UIAlertAction(title: "취소", style: .cancel)
+        let confirm = UIAlertAction(title: "확인", style: .default, handler: { _ in
+            self.resetCurrentData()
+        })
+        alert.addAction(cancel)
+        alert.addAction(confirm)
+        present(alert, animated: true)
+    }
 
     @IBAction func tappedMoodButton(_ sender: UIButton) {
         let index = sender.tag - 1
@@ -77,5 +88,12 @@ class InputViewController: UIViewController {
             print("\(mood): \(score)점", separator: " ", terminator: terminator)
         }
         print("")
+    }
+    
+    func resetCurrentData() {
+        for name in moodNames {
+            userDefaults.removeObject(forKey: name.rawValue)
+        }
+        printAllScores()
     }
 }

@@ -28,10 +28,32 @@ class ChartViewController: UIViewController {
         configScoreLabels()
     }
     
+    @IBAction func tappedArchiveButton(_ sender: UIBarButtonItem) {
+        var scores: [Int] = []
+        
+        for i in 0...moodNames.count - 1 {
+            let moodString = moodNames[i].rawValue
+            let score = userDefaults.integer(forKey: moodString)
+            scores.append(score)
+        }
+        
+        let date = Date().dateToString()
+        userDefaults.set(date, forKey: .archivedDate)
+        userDefaults.set(scores, forKey: date)
+        print(scores)
+    }
+    
     func configUI() {
         configMoodNameLabels()
         configScoreLabels()
         configCardBackgrounds()
+        configBackButton()
+    }
+    
+    func configBackButton() {
+        let backButton = UIBarButtonItem(title: " ", style: .plain, target: self, action: nil)
+        backButton.tintColor = .black
+        self.navigationItem.backBarButtonItem = backButton
     }
     
     func configMoodNameLabels() {
